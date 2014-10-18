@@ -1,0 +1,68 @@
+<!doctype html>
+<html class="no-js" ng-app="app">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Scope</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <!-- bower:css -->
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
+    <!-- endinject -->
+
+    <!-- inject:css -->
+    <link rel="stylesheet" href="app.css">
+    <!-- endinject -->
+
+  </head>
+  <body >
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div ng-include="'components/navbar/navbar.html'"></div>
+    <div class="container-fluid">
+      <div ui-view></div>
+    </div>
+    <div class="container-fluid">
+      <div class="footer">
+        <p>Scope Inc. &copy;2014 </p>
+      </div>
+    </div>
+
+    <!--Connected to maps api-->
+    <script src='//maps.googleapis.com/maps/api/js?sensor=false'></script>
+
+    <!-- bower:js -->
+    <script src="../bower_components/json3/lib/json3.js"></script>
+    <script src="../bower_components/es5-shim/es5-shim.js"></script>
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="../bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="../bower_components/angular-animate/angular-animate.js"></script>
+    <script src="../bower_components/angular-touch/angular-touch.js"></script>
+    <script src="../bower_components/angular-route/angular-route.js"></script>
+    <script src="../bower_components/firebase/firebase.js"></script>
+    <script src="../bower_components/rsvp/rsvp.js"></script>
+    <script src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="../bower_components/angularjs-geolocation/src/geolocation.js"></script>
+    <script src="../bower_components/firebase-simple-login/firebase-simple-login.js"></script>
+    <script src="../bower_components/mockfirebase/dist/mockfirebase.js"></script>
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/lodash/dist/lodash.compat.js"></script>
+    <script src="../bower_components/angular-resource/angular-resource.js"></script>
+    <script src="../bower_components/geofire/dist/geofire.min.js"></script>
+    <script src="../bower_components/angularfire/dist/angularfire.min.js"></script>
+    <script src="../bower_components/angularGeoFire/src/angularGeoFire.js"></script>
+    <script src="../bower_components/angular-google-maps/dist/angular-google-maps.js"></script>
+    <!-- endinject -->
+
+    <!-- inject:js -->
+    <script src="app.js"></script>
+    <script src="components/navbar/navbar-controller.js"></script>
+    <script src="home/home-controller.js"></script>
+    <!-- endinject -->
+
+  </body>
+</html>
